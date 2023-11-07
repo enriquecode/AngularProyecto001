@@ -18,6 +18,8 @@ import { ListadoarticulosComponent } from './listadoarticulos/listadoarticulos.c
 
 import {HttpClientModule} from '@angular/common/http';
 import { BarramenuComponent } from './barramenu/barramenu.component';
+import { TablaComponent } from './tabla/tabla.component';
+import { OperacionesbasicasComponent } from './operacionesbasicas/operacionesbasicas.component';
 
 //const routes: Routes = [];
 const routes: Routes = [
@@ -34,7 +36,9 @@ const routes: Routes = [
     SelectornumericoComponent,
     Selectornumerico2Component,
     ListadoarticulosComponent,
-    BarramenuComponent
+    BarramenuComponent,
+    TablaComponent,
+    OperacionesbasicasComponent
   ],
   imports: [
     BrowserModule,

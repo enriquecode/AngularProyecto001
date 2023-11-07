@@ -8,6 +8,8 @@ import { Selectornumerico2Component} from './selectornumerico2/selectornumerico2
 //se puede decir que ./ es src/app
 import { ServicearticulosService} from './servicearticulos.service';
 
+import { PostblogforboottablaService } from './postblogforboottabla.service';
+
 @Component({
   selector: 'raiz',
   templateUrl: './app.component.html',
@@ -138,27 +140,45 @@ export class AppComponent {
 
   //ejemplo de articulos recuperando en un servicio desde un componente de servicio
   //este codigo sirve para cualquiera de las 2 opciones que se tiene en ngOnInit
-  constructor(private serviceArticulos: ServicearticulosService) { }
+  //constructor(private serviceArticulos: ServicearticulosService) { }
   //ejemplo de articulos recuperando en un servicio desde un componente de servicio
   
-  ngOnInit(){
+  //ngOnInit(){
     //cuando en servicearticulos.service.ts son datos duros 
     // this.articulos = this.serviceArticulos.retornar();
 
     //con datos obtnenidos desde un servicio web externo
-    this.serviceArticulos.retornar()
-    .subscribe(
-      result => this.articulos = result
-    );
-  }
+  //   this.serviceArticulos.retornar()
+  //   .subscribe(
+  //     result => this.articulos = result
+  //   );
+  // }
 
-  opciones = [
-    "Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4", "Opcion 5"
-  ];
+  // Bootstrap barra de menu
+  // opciones = [
+  //   "Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4", "Opcion 5"
+  // ];
 
-  presionenpadre(op: number) {
-    alert("Se informa que se presiono la opcion " + op);
-  }
+  // presionenpadre(op: number) {
+  //   alert("Se informa que se presiono la opcion " + op);
+  // }
+
+  // Bootstrap barra de menu
+
+  //Codigo para root-table
+  // post : any;
+  // titulosColumnas = ['código de usuario', 'código de post', 'titulo', 'descripción'];
+  // constructor(private postblogService: PostblogforboottablaService) { }
+
+  // ngOnInit() {
+  //   this.postblogService.retornar()
+  //     .subscribe(result => this.post = result)
+  // }
+
+  //Codigo para root-table
+
+  //Codigo para operaciones basicas
+  //Codigo para operaciones basicas
 }
 
 
